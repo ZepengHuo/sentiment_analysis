@@ -22,11 +22,11 @@ def usage():
 
 if __name__ == '__main__':
 
-    if len(sys.argv) < 2:
+    '''if len(sys.argv) < 2:
         usage()
         sys.exit(1)
-
-    data_dir = sys.argv[1]
+    '''
+    #data_dir = sys.argv[1]
     classes = ['pos', 'neg']
 
     # Read the data
@@ -34,7 +34,28 @@ if __name__ == '__main__':
     train_labels = []
     test_data = []
     test_labels = []
-    for curr_class in classes:
+    train_data=[]
+    train_labels=[]
+    with open('downloaded_A_train.tsv') as f:
+        for line in f:
+            line=line[:-1]
+            if line[19:22]=='neg' or line[19:21]=='pos':
+                train_data.append(line[28:])
+                train_labels.append('non-neu')
+            elif line[19:22]=='neu':
+                train_data.append(line[27:])
+                train_labels.append('neu')
+    with open('downloaded_A_train.tsv') as f1:
+        for line in f1:
+            line=line[:-1]
+            if line[19:22]=='neg' or line[19:21]=='pos':
+                test_data.append(line[28:])
+                test_labels.append('non-neu')
+            elif line[19:22]=='neu':
+                test_data.append(line[27:])
+                test_labels.append('neu')
+            
+    '''for curr_class in classes:
         dirname = os.path.join(data_dir, curr_class)
         for fname in os.listdir(dirname):
             with open(os.path.join(dirname, fname), 'r') as f:
@@ -45,7 +66,7 @@ if __name__ == '__main__':
                 else:
                     train_data.append(content)
                     train_labels.append(curr_class)
-
+    '''
     # Create feature vectors
     vectorizer = TfidfVectorizer(min_df=5,
                                  max_df = 0.8,
