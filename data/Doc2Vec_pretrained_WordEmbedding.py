@@ -1,7 +1,7 @@
 import gensim.models as g
 import logging
 
-#doc2vec parameters
+#doc2vec parameters setting
 vector_size = 300
 window_size = 15
 min_count = 1
