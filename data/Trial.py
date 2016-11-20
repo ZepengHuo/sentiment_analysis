@@ -9,4 +9,3 @@ with open('downloaded_A_train.tsv') as f:
             elif line[19:22]=='neu':
                 train_data.append(line[27:])
                 train_labels.append('neu')
-print train_data
