@@ -1,5 +1,3 @@
-
-
 import sys
 import os
 import time
@@ -31,21 +29,23 @@ if __name__ == '__main__':
     with open('downloaded_A_train.tsv') as f:
         for line in f:
             line=line[:-1]
-            if line[19:22]=='neg' or line[19:21]=='pos':
+            if line[19:22]=='pos':
                 train_data.append(line[28:])
-                train_labels.append('non-neu')
-            elif line[19:22]=='neu':
-                train_data.append(line[27:])
-                train_labels.append('neu')
-    with open('downloaded_A_train.tsv') as f1:
+                train_labels.append('pos')
+            elif line[19:22]=='neg':
+                train_data.append(line[28:])
+                train_labels.append('neg')
+            
+    with open('downloaded_A_dev.tsv') as f1:
         for line in f1:
             line=line[:-1]
-            if line[19:22]=='neg' or line[19:21]=='pos':
+            if  line[19:22]=='pos':
                 test_data.append(line[28:])
-                test_labels.append('non-neu')
-            elif line[19:22]=='neu':
-                test_data.append(line[27:])
-                test_labels.append('neu')
+                test_labels.append('pos')
+            elif line[19:22]=='neg':
+                test_data.append(line[28:])
+                test_labels.append('neg')
+            
             
     '''for curr_class in classes:
         dirname = os.path.join(data_dir, curr_class)

@@ -4,8 +4,8 @@ import codecs
 
 #parameters
 model="imdb1/model.bin"
-test_docs="imdb1/pos/cv001_18431.txt"
-output_file="imdb1/test_vectors.txt"
+test_docs="Testing pos+neg.txt"
+output_file="imdb1/test_vectors(2).txt"
 
 #inference hyper-parameters
 start_alpha=0.01

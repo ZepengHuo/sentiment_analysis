@@ -15,7 +15,7 @@ worker_count = 1 #number of parallel processes
 pretrained_emb = "imdb1/glove_model2.txt" #None if use without pretrained embeddings
 
 #input corpus
-train_corpus = "all tweets in one file.txt"
+train_corpus = "rt-polarity.train.txt"
 
 #output model
 saved_path = "imdb1/model.bin"
