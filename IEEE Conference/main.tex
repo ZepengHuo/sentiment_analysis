@@ -578,7 +578,7 @@ The next issue is of regularization in the neural network. Of the two common way
 In order to see the performance of the model we design, we compare it with some other baseline models. First, we compare it with a couple of SVM classification models with different kernels. The kernels we use here are RBF kernel and linear kernel. Both of the SVM models used the tf-idf vectorization to form the vector for each tweet. Secondly, in order to testify the effect of clustering before the classification, we compare our model with the one without pre-clustering processing. This model classifies all the tweets in one step.
 Third, in order to see the effect of the size of dataset, we incorporate the dataset from previous years into the model, and use non-clustering classification method to see how does bigger size of data will affect the performance of Tensorflow network. This is because Tensorflow requires a relatively huge training dataset, but we can't provide that due to the given dataset from the Semeval. Therefore, we add more data, which may not have the same topics of this year's data and thus we don't know what does the topics look like in previous dataset. In this case, we can't use the cluster we train on this year's dataset to cluster the old dataset. But we can still compare the effect of data size.
 \\ \indent
-In the result we can see the last three column in fig 2 is the model we built and it's overall performance is better than other models. The most improvement is accuracy. The non-clustering Tensorflow model has similar performance of SVM with linear kernel. This is because if we feed all the tweets into a classification without pre-processing, the model can't focus on building a boundary between similar topics which therefore is hard to classify and needs to be treated individually. But the model with linear svm has highest F1-score. It means our model still can't beat some of the baselines in terms of some evaluation metrics.
+In the result we can see the last three column in fig 2 is the model we built and it's overall performance is better than other models. The most improvement is accuracy. The non-clustering CNN model has similar performance of SVM with linear kernel. This is because if we feed all the tweets into a classification without pre-processing, the model can't focus on building a boundary between similar topics which therefore is hard to classify and needs to be treated individually. But the model with linear svm has highest F1-score. It means our model still can't beat some of the baselines in terms of some evaluation metrics.
 
 \begin{figure}[h]
 \centering
@@ -597,20 +597,20 @@ As we can see the result of each cluster in fig 2, the second cluster didn't per
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{Capture(4)}
-\caption{Result of two Tensorflow models}
+\includegraphics[width=70mm,scale=0.5]{Capture(4)}
+\caption{Result of two CNN models}
 \end{figure}
 
-In fig 3, we compare our model with the one training on both this year's and previous year's data. The Tensorflow with clustering means it only trains on this year's data. Tensorflow with previous data has both this year's and previous year's data. As we can see when the data grows, the F-1 score can easily beat the SVM. 
+In fig 3, we compare our model with the one training on both this year's and previous year's data. The CNN with clustering means it only trains on this year's data. CNN with previous data has both this year's and previous year's data. As we can see when the data grows, the F-1 score can easily beat the SVM. 
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{Capture(5)}
-\caption{Result of Tensorflow and SVM models with added data}
+\caption{Result of CNN and SVM models with added data}
 \end{figure}
 
 
-To make it more convincing, we add previous year's data to svm model on both rbf and linear kernel.As we can see in fig 4, with more data, Tensorflow has a boost on F1-score, but the SVM models don't have much improvement. We conclude that, since our model has better performance than non-clustering one. And when data size grows, non-clustering Tensorflow model can beat normal classification models. Therefore, if we have more data which shares same topic scope of this year's data, our model will beat most of the classification models.
+To make it more convincing, we add previous year's data to svm model on both rbf and linear kernel.As we can see in fig 4, with more data, CNN has a boost on F1-score, but the SVM models don't have much improvement. We conclude that, since our model has better performance than non-clustering one. And when data size grows, non-clustering CNN model can beat normal classification models. Therefore, if we have more data which shares same topic scope of this year's data, our model will beat most of the classification models.
 
 
 In a similar data set using the Semeval Twitter 2016 and the Twitter 2013 data for used by Vikrant et all 2016 , a direct comparison can be made between our model and the multilayer RNN used for binary classification. 

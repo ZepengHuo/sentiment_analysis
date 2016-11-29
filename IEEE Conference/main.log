@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.12)  28 NOV 2016 21:40
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.12)  28 NOV 2016 23:21
 entering extended mode
 **main.tex
 
@@ -205,32 +205,34 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 458--459
 
 
  <C:/Users/Frazierhuo/Desktop/Sentiment_Analysis/sentiment_analysis/IEEE Confer
-ence/Capture(2).png>] [2] <Capture.png, id=14, 423.08063pt x 78.2925pt>
+ence/Capture(2).png>] [2] <Capture.png, id=14, 399.74344pt x 77.53969pt>
 File: Capture.png Graphic file (type png)
 
 <use Capture.png>
 Package pdftex.def Info: Capture.png used on input line 585.
-(pdftex.def)             Requested size: 262.04987pt x 48.49425pt.
+(pdftex.def)             Requested size: 262.04987pt x 50.8332pt.
 
 Overfull \hbox (9.0pt too wide) in paragraph at lines 585--586
  [][] 
  []
 
-<Capture(4).png, id=15, 331.99031pt x 62.48344pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Capture(4).png, id=15, 288.3272pt x 62.48344pt>
 File: Capture(4).png Graphic file (type png)
  <use Capture(4).png>
 Package pdftex.def Info: Capture(4).png used on input line 600.
-(pdftex.def)             Requested size: 262.04987pt x 49.32227pt.
+(pdftex.def)             Requested size: 144.16324pt x 31.24164pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 600--601
- [][] 
- []
 
-<Capture(5).png, id=16, 444.91219pt x 62.48344pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Capture(5).png, id=16, 386.19281pt x 61.73062pt>
 File: Capture(5).png Graphic file (type png)
  <use Capture(5).png>
 Package pdftex.def Info: Capture(5).png used on input line 608.
-(pdftex.def)             Requested size: 262.04987pt x 36.80197pt.
+(pdftex.def)             Requested size: 262.04987pt x 41.88676pt.
 
 Overfull \hbox (9.0pt too wide) in paragraph at lines 608--609
  [][] 
@@ -276,13 +278,13 @@ Here is how much of TeX's memory you used:
  5198 multiletter control sequences out of 15000+200000
  31871 words of font info for 61 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 27i,6n,19p,1810b,208s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,20p,1810b,208s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Frazierhuo/AppData/Local/Programs/MiKTeX 2.9/fonts/e
 nc/dvips/fontname/8r.enc}<C:/Users/Frazierhuo/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/urw/times/utmb8a.pfb><C:/Users/Frazierhuo/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Frazierhuo/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (4 pages, 85626 bytes).
+Output written on main.pdf (4 pages, 84858 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
