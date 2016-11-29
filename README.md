@@ -1,5 +1,7 @@
 # sentiment_analysis
 
+Report files are stored in IEEE Conference folder, data and python codes are stored in data folder
+
 How to see the result:
 
 Since we already train the model and store it, thus you don't need to train our model again. By running the scitkit_svm_sentiment.py, you can see the result of baseline SVM
