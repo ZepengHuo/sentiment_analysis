@@ -1,0 +1,299 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.12)  29 NOV 2016 15:21
+entering extended mode
+**main.tex
+
+("C:\Users\Frazierhuo\Desktop\Sentiment_Analysis\sentiment_analysis\IEEE Confer
+ence\main.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+
+("C:\Users\Frazierhuo\Desktop\Sentiment_Analysis\sentiment_analysis\IEEE Confer
+ence\IEEEtran.cls"
+Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
+istensen
+-- Based on V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 373.
+
+
+("C:\Users\Frazierhuo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm
+.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+)
+("C:\Users\Frazierhuo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\blindtext\bli
+ndtext.sty"
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+("C:\Users\Frazierhuo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.
+sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count91
+\c@Blindtext=\count92
+\c@blind@countparstart=\count93
+\blind@countxx=\count94
+\blindtext@numBlindtext=\count95
+\blind@countyy=\count96
+\c@blindlist=\count97
+\c@blindlistlevel=\count98
+\c@blindlist@level=\count99
+\blind@listitem=\count100
+\c@blind@listcount=\count101
+\c@blind@levelcount=\count102
+\blind@mathformula=\count103
+\blind@Mathformula=\count104
+\c@blind@randomcount=\count105
+\c@blind@randommax=\count106
+\c@blind@pangramcount=\count107
+\c@blind@pangrammax=\count108
+)
+("C:\Users\Frazierhuo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\grap
+hicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Frazierhuo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyv
+al.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Users\Frazierhuo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\grap
+hics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Frazierhuo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig
+.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Users\Frazierhuo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\grap
+hics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("C:\Users\Frazierhuo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftex-def\pd
+ftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Users\Frazierhuo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\in
+fwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Users\Frazierhuo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\lt
+xcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count109
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+("C:\Users\Frazierhuo\Desktop\Sentiment_Analysis\sentiment_analysis\IEEE Confer
+ence\main.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
+ (C:\Software\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count110
+\scratchdimen=\dimen119
+\scratchbox=\box27
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen120
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks17
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 453.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 453.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 453.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 453.
+ <Capture(2).png, id=1, 536.0025pt x 152.06813pt>
+File: Capture(2).png Graphic file (type png)
+ <use Capture(2).png>
+Package pdftex.def Info: Capture(2).png used on input line 458.
+(pdftex.def)             Requested size: 262.04987pt x 74.34464pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 458--459
+ [][] 
+ []
+
+[1{C:/Software/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+
+
+ <C:/Users/Frazierhuo/Desktop/Sentiment_Analysis/sentiment_analysis/IEEE Confer
+ence/Capture(2).png>] [2] <Capture.png, id=14, 399.74344pt x 77.53969pt>
+File: Capture.png Graphic file (type png)
+
+<use Capture.png>
+Package pdftex.def Info: Capture.png used on input line 585.
+(pdftex.def)             Requested size: 262.04987pt x 50.8332pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 585--586
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Capture(4).png, id=15, 288.3272pt x 62.48344pt>
+File: Capture(4).png Graphic file (type png)
+ <use Capture(4).png>
+Package pdftex.def Info: Capture(4).png used on input line 600.
+(pdftex.def)             Requested size: 144.16324pt x 31.24164pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Capture(5).png, id=16, 386.19281pt x 61.73062pt>
+File: Capture(5).png Graphic file (type png)
+ <use Capture(5).png>
+Package pdftex.def Info: Capture(5).png used on input line 608.
+(pdftex.def)             Requested size: 262.04987pt x 41.88676pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 608--609
+ [][] 
+ []
+
+<Capture(6).png, id=17, 334.24875pt x 45.92157pt>
+File: Capture(6).png Graphic file (type png)
+ <use Capture(6).png>
+Package pdftex.def Info: Capture(6).png used on input line 619.
+(pdftex.def)             Requested size: 262.04987pt x 36.00505pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 619--620
+ [][] 
+ []
+
+[3 <C:/Users/Frazierhuo/Desktop/Sentiment_Analysis/sentiment_analysis/IEEE Conf
+erence/Capture.png> <C:/Users/Frazierhuo/Desktop/Sentiment_Analysis/sentiment_a
+nalysis/IEEE Conference/Capture(4).png> <C:/Users/Frazierhuo/Desktop/Sentiment_
+Analysis/sentiment_analysis/IEEE Conference/Capture(5).png> <C:/Users/Frazierhu
+o/Desktop/Sentiment_Analysis/sentiment_analysis/IEEE Conference/Capture(6).png>
+]
+** WARNING: \IEEEbiography is locked out when in conference mode (line 726).
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[4]
+("C:\Users\Frazierhuo\Desktop\Sentiment_Analysis\sentiment_analysis\IEEE Confer
+ence\main.aux") ) 
+Here is how much of TeX's memory you used:
+ 2026 strings out of 495354
+ 32862 string characters out of 3183355
+ 93744 words of memory out of 3000000
+ 5210 multiletter control sequences out of 15000+200000
+ 36357 words of font info for 70 fonts, out of 3000000 for 9000
+ 17 hyphenation exceptions out of 8191
+ 27i,8n,20p,1810b,208s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Frazierhuo/AppData/Local/Programs/MiKTeX 2.9/fonts/e
+nc/dvips/fontname/8r.enc}<C:/Users/Frazierhuo/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Frazierhuo/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Frazierhuo/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (4 pages, 84431 bytes).
+PDF statistics:
+ 39 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+
