@@ -450,7 +450,7 @@ We will have two tasks. The first task was training a model using all the data i
 \\ \indent
 In the second task, we first cluster the data into the 3 relevant clusters and then we feed the clustered tweets as input to the CNN model. We built a simple single layer CNN to handle the classification task. The tweets  In the model tuning process, the data input type to the model and the model parameters  were tuned. We will take a closer look at the neural network in the next section.
 \\ \indent
-Before the classification, we need to tokenize all the tweets in Twitter context. This step is necessary because some expression may be unique on social media like Twitter and thus carry specific emotion. For example, the emoticon ':)' means happy or smiley, and it is highly likely related to positive sentiment. But if we use normal tokenization method, it may separate it as ':' and ')', so it loses its original meaning. The tokenization method we use is twokenize. It's specific to Twitter and make every token intact, without adding or losing meanings. After tokenization, we can feed each tweets into a binary classification.
+Before the classification, we need to tokenize all the tweets in Twitter context. This step is necessary because some expression may be unique on social media like Twitter and thus carry specific emotion. For example, the emoticon ':)' means happy or smiley, and it is highly likely related to positive sentiment. But if we use normal tokenization method, it may separate it as ':' and ')', so it loses its original meaning. The tokenization method we use is twokenize\footnote{https://github.com/myleott/ark-twokenize-py}. It's specific to Twitter and make every token intact, without adding or losing meanings. After tokenization, we can feed each tweets into a binary classification.
 Since we use two steps to classify each tweet, we'll introduce the problems we tackled on each step.
 \\ \indent
 \begin{figure}[h]
@@ -547,7 +547,7 @@ As for clustering, we want to make use of the hidden information under the data 
 % stfloats package.
 
 \section{Specific System Implementations}
-In the part of clustering, we have our novelty in the system. First, as for converting the tweet into a mathematical representation, most common way is to use bag of words and word embedding. Then the whole tweet is concatenation or averaged vector of word embedding. These methods have problems of either making tweets vectors too long or losing lots of latent information by averaging word vectors. In our system, we use Doc2Vec. It can learn the vector of one sentence of one document by going through the corpus we provide. It then simultaneously learns the word vector in each tweet and the document vector of that tweet. The words appearing in similar context will likely have similar vector representation. The tweets consisting of similar word vectors will have similar document vectors. Thus, the Doc2Vec can preserve the original information in the tweet at the greatest extend and also avoid increasing the tweet vector dimension unnecessarily. Both the time complexity and space complexity can come to a balance.
+In the part of clustering, we have our novelty in the system. First, as for converting the tweet into a mathematical representation, most common way is to use bag of words and word embedding. Then the whole tweet is concatenation or averaged vector of word embedding. These methods have problems of either making tweets vectors too long or losing lots of latent information by averaging word vectors. In our system, we use Doc2Vec\footnote{https://radimrehurek.com/gensim/models/doc2vec.html}. It can learn the vector of one sentence of one document by going through the corpus we provide. It then simultaneously learns the word vector in each tweet and the document vector of that tweet. The words appearing in similar context will likely have similar vector representation. The tweets consisting of similar word vectors will have similar document vectors. Thus, the Doc2Vec can preserve the original information in the tweet at the greatest extend and also avoid increasing the tweet vector dimension unnecessarily. Both the time complexity and space complexity can come to a balance.
 \\ \indent
 Since the dataset Semeval provides is relatively small (up to 6000 tweets for training), we may have the problem of overfitting the data thus making the noisy input contaminate the model. For example, if some of the tweets are using sarcasm and making positive adjectives carrying negative emotions. If we only train on these tweets, it's highly likely that similar positive words will be classified negative in other tweets, even though these tweets didn't use sarcasm. In the light of this, we propose a method to make the vector initialization closer to a well-established understanding of English words in Twitter. By initializing the word embedding using pre-trained word vectors, the document vector is more likely to come to a optimum. For the pre-trained word embedding, we used the library called Global Vectors for Word Representation (GloVe). The pre-trained word vectors are trained on 2 billion tweets, ending having 27 billion tokens and 1.2 million vocabulary. After feeding pre-trained word embedding into the Doc2Vec model, we make our model carry more well-known usage of English words in Twitter. In this way, some noisy input from the training set we provide the classification model may be alleviated by giving each word the meaning all users on Twitter can easily agree on.
 \\ \indent
@@ -569,7 +569,7 @@ The next layer is the 1 max pooling layer. This uses the variable length feature
 \item
 The next issue is of regularization in the neural network. Of the two common ways, L2norm constraints and neuron drop out, we can regularize a CNN, in our implementation we choose to use the neuron dropout method. We choose to use 0.5 as the drop out probabilities during training the network. This was motivated by the observations of Nakov, Preslav, et al. 2016.about L2 not leading to significant improvements in the model performance.
 \item
-The next issue is of regularization in the neural network. Of the two common ways, L2norm constraints and neuron drop out, we can regularize a CNN, in our implementation we choose to use the neuron dropout method. We choose to use 0.5 as the drop out probabilities during training the network. This was motivated by the observations of Nakov, Preslav, et al. 2016.about L2 not leading to significant improvements in the model performance.
+The loss calculation for the model was done with the cross entropy loss which is the most commonly used loss function for a classification problem. In the optimizer for the gradient descent we used the Adam optimizer in Tensor Flow and used a mini batch size of 100. The training was cross validated by using 10 fold CV.
 \end{enumerate}
 
 
@@ -613,7 +613,7 @@ In fig 3, we compare our model with the one training on both this year's and pre
 To make it more convincing, we add previous year's data to svm model on both rbf and linear kernel.As we can see in fig 4, with more data, CNN has a boost on F1-score, but the SVM models don't have much improvement. We conclude that, since our model has better performance than non-clustering one. And when data size grows, non-clustering CNN model can beat normal classification models. Therefore, if we have more data which shares same topic scope of this year's data, our model will beat most of the classification models.
 
 
-In a similar data set using the Semeval Twitter 2016 and the Twitter 2013 data for used by Vikrant et all 2016 , a direct comparison can be made between our model and the multilayer RNN used for binary classification. 
+In a similar data set using the Semeval Twitter 2016 and the Twitter 2013 data used by Vikrant et all 2016 , a direct comparison can be made between our model and the multilayer RNN used for binary classification. We also make comparison of our model to the one trained by Vilares et all 2016 who trained a CNN for the binary classification of the same Semeval dataset. We can see that our model performs comparably better when we use more training examples. In the case of the clustering model we can see an improvement in the precision of the model. This can partly be blamed on the second cluster.  
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{Capture(6)}
@@ -643,8 +643,10 @@ In this paper, we proposed a model for sentiment analysis with pre-clustering pr
 
 
 \appendices
-\section*{appendices}
+\section*{Some comments}
 \begin{enumerate}
+\item
+The task in Semeval is for the classification of the tweets on a 3 scale basis of positive, neutral and negative. But as has been noted by many in participants and is visible from the results of the 3 class classification, the data set for the 3 and the 5 class classification is very noisy and in general results in poor model performance.
 \item
 The CNN model training in takes a lot of time especially if it is run on the CPU only mode. A model with about 10000 tweets in total for a two class classification took about 15 hours to train.
 \item
@@ -693,7 +695,7 @@ In the current state we have not put in place any mechanism to correct the spell
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
+\begin{thebibliography}{2}
 
 \bibitem{IEEEhowto:HLTCOE}
 HLTCOE, JHU. "SemEval-2013 Task 2: Sentiment Analysis in Twitter." Atlanta, Georgia, USA 312 (2013).
@@ -705,6 +707,8 @@ Kim, Yoon. "Convolutional neural networks for sentence classification." arXiv pr
 Zhang, Ye, and Byron Wallace. "A Sensitivity Analysis of (and Practitioners' Guide to) Convolutional Neural Networks for Sentence Classification." arXiv preprint arXiv:1510.03820 (2015).
 \bibitem{IEEEhowto:Yadav}
 Yadav, Vikrant. "thecerealkiller at SemEval-2016 Task 4: Deep learning based system for classifying sentiment of tweets on two point scale." Proceedings of SemEval (2016): 100-102.
+\bibitem{IEEEhowto:Vilaresa}
+Vilaresa, David, et al. "LYS at SemEval-2016 Task 4: Exploiting neural activation values for Twitter sentiment classification and quantification." Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval 2016), San Diego, US. 2016.
 
 \end{thebibliography}
 

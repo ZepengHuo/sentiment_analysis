@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.12)  28 NOV 2016 23:21
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.12)  29 NOV 2016 15:21
 entering extended mode
 **main.tex
 
@@ -191,7 +191,16 @@ LaTeX Font Info:    ... okay on input line 353.
 \MPnumerator=\count114
 \makeMPintoPDFobject=\count115
 \everyMPtoPDFconversion=\toks17
-) <Capture(2).png, id=1, 536.0025pt x 152.06813pt>
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 453.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 453.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 453.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 453.
+ <Capture(2).png, id=1, 536.0025pt x 152.06813pt>
 File: Capture(2).png Graphic file (type png)
  <use Capture(2).png>
 Package pdftex.def Info: Capture(2).png used on input line 458.
@@ -238,11 +247,11 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 608--609
  [][] 
  []
 
-<Capture(6).png, id=17, 508.90125pt x 65.49469pt>
+<Capture(6).png, id=17, 334.24875pt x 45.92157pt>
 File: Capture(6).png Graphic file (type png)
  <use Capture(6).png>
 Package pdftex.def Info: Capture(6).png used on input line 619.
-(pdftex.def)             Requested size: 262.04987pt x 33.72662pt.
+(pdftex.def)             Requested size: 262.04987pt x 36.00505pt.
 
 Overfull \hbox (9.0pt too wide) in paragraph at lines 619--620
  [][] 
@@ -254,7 +263,7 @@ nalysis/IEEE Conference/Capture(4).png> <C:/Users/Frazierhuo/Desktop/Sentiment_
 Analysis/sentiment_analysis/IEEE Conference/Capture(5).png> <C:/Users/Frazierhu
 o/Desktop/Sentiment_Analysis/sentiment_analysis/IEEE Conference/Capture(6).png>
 ]
-** WARNING: \IEEEbiography is locked out when in conference mode (line 722).
+** WARNING: \IEEEbiography is locked out when in conference mode (line 726).
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -266,25 +275,23 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4
-
-]
+[4]
 ("C:\Users\Frazierhuo\Desktop\Sentiment_Analysis\sentiment_analysis\IEEE Confer
 ence\main.aux") ) 
 Here is how much of TeX's memory you used:
- 2006 strings out of 495354
- 32651 string characters out of 3183355
- 92741 words of memory out of 3000000
- 5198 multiletter control sequences out of 15000+200000
- 31871 words of font info for 61 fonts, out of 3000000 for 9000
+ 2026 strings out of 495354
+ 32862 string characters out of 3183355
+ 93744 words of memory out of 3000000
+ 5210 multiletter control sequences out of 15000+200000
+ 36357 words of font info for 70 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 27i,6n,20p,1810b,208s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,20p,1810b,208s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Frazierhuo/AppData/Local/Programs/MiKTeX 2.9/fonts/e
 nc/dvips/fontname/8r.enc}<C:/Users/Frazierhuo/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/urw/times/utmb8a.pfb><C:/Users/Frazierhuo/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Frazierhuo/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (4 pages, 84858 bytes).
+Output written on main.pdf (4 pages, 84431 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
